@@ -1,0 +1,23 @@
+{
+	"name": "frontend-mentor_-_product-list-with-cart",
+	"type": "module",
+	"private": true,
+	"devDependencies": {
+		"@biomejs/biome": "^2.5.14",
+		"@types/bun": "latest",
+		"vite": "^8.3.0"
+	},
+	"peerDependencies": {
+		"typescript": "^7.0.2"
+	},
+	"scripts": {
+		"biome": "biome migrate --write",
+		"lint": "biome lint --write .",
+		"format": "biome format --write .",
+		"check": "biome check --write .",
+		"gitreset": "git reset --hard && git clean -fd",
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	}
+}
